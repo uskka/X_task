@@ -3,8 +3,7 @@ Windows setup:
 2. have some java IDE, I am using intelliJ https://www.jetbrains.com/idea/download/#section=windows
 3. make sure you have firefox browser installed https://www.mozilla.org/pl/firefox/new/ , if you had to install it you have to restart the computer
 4. open the test project in the IDE with "open project from version control" option
-5. there may appear a popup on the right bottom part of the screen in intelliJ after project is downloaded "maven build script found", press import. If pupup is not visible it has been done automatically
-6. In the project tab on the left side in the IDE, click right mouse button on a TestRunner and press run "TestRunner" (X_task/src/main/java/cucumberRunners)
+5. In the project tab on the left side in the IDE, click right mouse button on a TestRunner and press run "TestRunner" (X_task/src/main/java/cucumberRunners)
 
 Mac setup:
 1. have java development kit installed https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
