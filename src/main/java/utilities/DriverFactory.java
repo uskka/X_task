@@ -25,24 +25,24 @@ public class DriverFactory {
 
         }else if(os.toLowerCase().contains("linux")){
                 if ("firefox".equals(browser.toLowerCase())) {
-                    System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriverlinux");
+                    System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriverlinux");
                     return new FirefoxDriver();
                 } else if ("chrome".equals(browser.toLowerCase())) {
-                    System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriverlinux");
+                    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriverlinux");
                     return new ChromeDriver();
                 } else {
-                    System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriverlinux");
+                    System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriverlinux");
                     return new FirefoxDriver();
                 }
-            }else if(os.toLowerCase().contains("macos")){
+            }else if(os.toLowerCase().contains("mac")){
                 if ("firefox".equals(browser.toLowerCase())) {
-                    System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriverMac");
+                    System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriverMac");
                     return new FirefoxDriver();
                 } else if ("chrome".equals(browser.toLowerCase())) {
-                    System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriverMac");
+                    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriverMac");
                     return new ChromeDriver();
                 } else {
-                    System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriverMac");
+                    System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriverMac");
                     return new FirefoxDriver();
                 }
 
