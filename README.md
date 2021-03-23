@@ -1,14 +1,24 @@
-In order to run the tests you have to :
+Windows setup:
 1. have java development kit installed https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
-2. have some java ide, I am using intelliJ https://www.jetbrains.com/idea/download/#section=windows
-3. make sure you have google chrome installed
-4. open the test project in the ide
-5. on the right bottom part of the screen in intelliJ after project is downloaded there should be a message maven build script found, press import
-6. After the import is done click right mouse button on a TestRunner and press run "TestRunner"
+2. have some java IDE, I am using intelliJ https://www.jetbrains.com/idea/download/#section=windows
+3. make sure you have firefox browser installed https://www.mozilla.org/pl/firefox/new/ , if you had to install it you have to restart the computer
+4. open the test project in the IDE with "open project from version control" option
+5. there may appear a popup on the right bottom part of the screen in intelliJ after project is downloaded "maven build script found", press import. If pupup is not visible it has been done automatically
+6. In the project tab on the left side in the IDE, click right mouse button on a TestRunner and press run "TestRunner" (X_task/src/main/java/cucumberRunners)
+
+Mac setup:
+1. have java development kit installed https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
+2. have some java IDE, I am using intelliJ https://www.jetbrains.com/idea/download/#section=windows
+3. make sure you have firefox browser installed https://www.mozilla.org/pl/firefox/new/ , if you had to install it you have to restart the computer
+4. open the test project in the IDE with "open project from version control" option
+5. make sure you are on the project tab on the left side menu, go to X_task/src/main/resources, on the resources folder icon press right mouse button and click open terminal, at the bottom of the page terminal should open, now execute command "chmod +x geckodriverMac"
+6. Click right mouse button on a TestRunnerMac and press run "TestRunnerMac" (src/main/java/cucumberRunners)
+
+Linux setup should work the same way as Mac setup but without step 5, unfortunately I don't have an access to Linux device to test it
 
 
 The lists of the tests are in .feature files, these are a cucumber testing framework files.
-Cucumber is used to manage test cases, test reports and make it easy to understand what the test does for even non technical people. (src/main/features)
+Cucumber is used to manage test cases, test reports and make it easy to understand what the test does for even non technical people. (X_task/src/main/features)
 
 Tests that are automated have a tag "@automated" above their description.
 I have automated 4 test cases, I tryed to choose test cases that have as many different website actions as possible, I have automated filling in text fields, checking url, clicking on a check box, clicking buttons, testing error messages also I have created a tests for both positive and negative tests.

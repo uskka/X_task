@@ -7,7 +7,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.CareersPage;
-import pages.CareersPage;
 import pages.DemoPage;
 import utilities.DriverFactory;
 
@@ -18,7 +17,7 @@ public class StepDefinitions {
 
     @Given("^user opens careers page$")
     public void user_opens_careers_page() {
-        this.driver = DriverFactory.driverSetup("chrome");
+        this.driver = DriverFactory.driverSetup("firefox");
         this.careersPage = new CareersPage(driver);
         driver.get("https://www.xeneta.com/careers");
         driver.manage().window().maximize();
@@ -67,7 +66,7 @@ public class StepDefinitions {
 
     @Given("^user goes to demo page$")
     public void user_goes_to_demo_page(){
-        this.driver = DriverFactory.driverSetup("chrome");
+        this.driver = DriverFactory.driverSetup("firefox");
         this.demoPage = new DemoPage(driver);
         driver.get("https://www.xeneta.com/demo");
         driver.manage().window().maximize();
